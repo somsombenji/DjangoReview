@@ -1,1 +1,6 @@
 <h1>안녕!!</h1>
+{%for blog in blogs.all%}
+<h2>{{blog.title}}</h2>
+<p>{{blog.pub_date}}</p>
+<p>{{blog.body}}</p>
+{%endfor%}
